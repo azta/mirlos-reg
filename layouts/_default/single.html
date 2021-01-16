@@ -1,0 +1,46 @@
+{{- define "head" -}}
+{{- with .Params.formio -}}
+<link rel='stylesheet' href='https://unpkg.com/formiojs@latest/dist/formio.full.min.css'>
+<script src='https://unpkg.com/formiojs@latest/dist/formio.full.min.js'></script>
+<script type='text/javascript'>
+    window.onload = function() {
+      Formio.createForm(document.getElementById('formio'), 'https://api.laabm.es/{{ . | urlize}}', {
+        readOnly: false,
+        language: 'es',
+        i18n: {
+          'es': {
+            'Submit': 'Enviar',
+            'Valid Email Address': 'dirección de email válida',
+            'required': '{{"{{"}}field{{"}}"}} es requerido.',
+            'invalid_email': '{{"{{"}}field{{"}}"}} debe ser un correo electrónico válido.',
+            'error': 'Por favor, corrija los siguientes errores antes de enviar.',
+            alertMessageWithLabel: '{{"{{"}}label{{"}}"}}: {{"{{"}}message{{"}}"}}',
+            alertMessage: '{{"{{"}}message{{"}}"}}',
+            unique: '{{"{{"}}field{{"}}"}} tiene que ser unique', 'Signature': 'Firma',
+            submitError: 'Por favor, corrija los errores antes de enviar.',
+            complete: 'Completado.',
+            'Unauthorized': 'Sin autorización'
+          }
+        } 
+    })
+    };
+  </script>
+{{- end -}}
+{{- end -}}
+
+{{ define "main" }}
+<div class="jumbotron jumbotron-fluid jumbotron_single">
+  <picture>
+    <source media="(min-width:600px)" srcset="{{ .Params.banner_large | safeHTML}}">
+    <img src="{{ .Params.banner }}" alt="{{ .Params.banner_alt | safeHTML}}" class="jumbotron__background">
+  </picture>
+  <div class="container text-center">
+    <h1 class="display-4" style="font-weight: bold;">
+      {{ .Title }}
+    </h1>
+  </div>
+</div>
+<div class="container">
+   {{ .Content }}
+</div>
+{{ end }}
