@@ -3,8 +3,8 @@ title: "Sobre Nosotros"
 date: 2021-01-12T15:25:41+01:00
 draft: true
 weight: 20
-banner: "/images/Juntos800.jpg"
-banner_large: "/images/Juntos0.jpg"
+banner: "Juntos800.jpg"
+banner_large: "Juntos0.jpg"
 banner_alt: "Jesus, Claudio, Monica y Hector de La Balsa De Los Mirlos."
 menu: ["main", "footer"]
 ---

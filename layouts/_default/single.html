@@ -31,8 +31,8 @@
 {{ define "main" }}
 <div class="jumbotron jumbotron-fluid jumbotron_single">
   <picture>
-    <source media="(min-width:600px)" srcset="{{ .Params.banner_large | safeHTML}}">
-    <img src="{{ .Params.banner }}" alt="{{ .Params.banner_alt | safeHTML}}" class="jumbotron__background">
+    <source media="(min-width:600px)" srcset="{{ .Site.BaseURL }}images/{{ .Params.banner_large | safeHTML}}">
+    <img src="{{ .Site.BaseURL }}images/{{ .Params.banner }}" alt="{{ .Params.banner_alt | safeHTML}}" class="jumbotron__background">
   </picture>
   <div class="container text-center">
     <h1 class="display-4" style="font-weight: bold;">

@@ -3,9 +3,9 @@ title: "Ser Socio"
 date: 2021-01-12T12:51:04+01:00
 draft: true
 weight: 10
-banner: "/images/Jesus800.jpg"
-banner_large: "/images/Jesus0.jpg"
-banner_alt: "Jesus"
+banner: "Jesus800.jpg"
+banner_large: "Jesus0.jpg"
+banner_alt: "Jesus bailando con sus lombrices"
 formio: "serSocio"
 formio_redirect: "sersocio_gracias"
 menu: ["main", "footer"]

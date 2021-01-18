@@ -2,9 +2,9 @@
 title: "Gracias"
 date: 2021-01-12T12:51:22+01:00
 draft: true
-banner: "/images/Hector800.jpg"
-banner_large: "/images/Hector0.jpg"
-banner_alt: "Hector con tomates dátiles"
+banner: "Hector800.jpg"
+banner_large: "Hector0.jpg"
+banner_alt: "Hector comiendo tomates dátiles"
 ---
 
 {{< success text="Gracias por enviar su solicitud. La hemos recibido." >}}
