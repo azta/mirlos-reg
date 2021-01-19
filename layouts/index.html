@@ -2,8 +2,8 @@
 <div class="jumbotron jumbotron-fluid">
   <picture>
     {{/*  large image if we have plenty of pixel width  */}}
-    <source media="(min-width:800px)" srcset="/images/Claudio0.jpg">
-    <img src="/images/Claudio800.jpg"
+    <source media="(min-width:800px)" srcset="{{ .Site.BaseURL }}images/Claudio0.jpg">
+    <img src="{{ .Site.BaseURL }}images/Claudio800.jpg"
       alt="Claudio holding a plant grown in the balsa de los mirlos."
       class="jumbotron__background">
   </picture>
